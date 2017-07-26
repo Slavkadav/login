@@ -1,0 +1,124 @@
+$mainColor: #233056;
+$linkBlue: #73adff;
+$dark-two: #0d1221;
+$semi: #4f5977;
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.link-list {
+  margin-bottom: 29px;
+  text-align: center;
+}
+
+.link-block {
+  margin-bottom: 15px;
+}
+
+input {
+  height: 35px;
+  width: 260px;
+  border-radius: 2px;
+  background-color: $dark-two;
+  border: 0;
+  color: white;
+  padding-left: 16px;
+  font-size: 14px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  padding-top: 24px;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  & > * {
+    margin-top: 50px;
+    margin-left: 10px;
+  }
+}
+
+.login {
+  width: 360px;
+  background-color: $mainColor;
+  border-radius: 2px;
+  .gglogo {
+    margin-left: 107px;
+    margin-top: 50px;
+  }
+  .enter {
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    width: 260px;
+    margin: 12px auto;
+    color: #fffffe;
+    font-size: 14px;
+    &.vk {
+      background-color: #4c6c91;
+    }
+    &.fb {
+      background-color: #3a599a;
+    }
+    &.tw {
+      background-color: #55acee;
+    }
+    &.google {
+      background-color: #fff;
+      color: rgba(0, 0, 0, 0.54);
+    }
+    &.bnet {
+      background-color: #153d5f;
+    }
+    img {
+      margin: 8px 17px 8px 8px;
+    }
+  }
+
+}
+
+.content-wrap {
+  color: white;
+  padding: 50px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.entrance {
+  border-radius: 2px;
+  width: 360px;
+  background-color: $mainColor;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.registration {
+  background-color: $mainColor;
+  width: 360px;
+  min-height: 100px;
+  margin-top: 50px;
+}
+
+.add-social {
+  float: left;
+  width: 360px;
+  background-color: $mainColor;
+  border-radius: 2px;
+
+  .hint {
+    background-color: $semi;
+    padding:7px;
+    border-left:4px solid #7e8fc2;
+  }
+}
+
