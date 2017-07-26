@@ -29,12 +29,14 @@ label {
 
 body {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  align-items: flex-start; }
   body > * {
     margin-top: 50px;
     margin-left: 10px; }
 
 .login {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
   width: 360px;
   background-color: #233056;
   border-radius: 2px; }
@@ -88,10 +90,10 @@ h2 {
   margin-top: 50px; }
 
 .add-social {
-  float: left;
   width: 360px;
   background-color: #233056;
-  border-radius: 2px; }
+  border-radius: 2px;
+  height: auto; }
   .add-social .hint {
     background-color: #4f5977;
     padding: 7px;
