@@ -6,7 +6,9 @@ $semi: #4f5977;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
-
+.btn{
+  margin: 24px auto;
+}
 .link-list {
   margin-bottom: 29px;
   text-align: center;
@@ -114,11 +116,20 @@ h2 {
   width: 360px;
   background-color: $mainColor;
   border-radius: 2px;
-
   .hint {
     background-color: $semi;
     padding:7px;
     border-left:4px solid #7e8fc2;
+  }
+  .btn{
+    display: inline-block;
+    width: 118px;
+  }
+  .btn:first-child{
+    float: left;
+  }
+  .btn:last-child{
+    float: right;
   }
 }
 

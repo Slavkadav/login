@@ -2,6 +2,9 @@
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif; }
 
+.btn {
+  margin: 24px auto; }
+
 .link-list {
   margin-bottom: 29px;
   text-align: center; }
@@ -93,5 +96,12 @@ h2 {
     background-color: #4f5977;
     padding: 7px;
     border-left: 4px solid #7e8fc2; }
+  .add-social .btn {
+    display: inline-block;
+    width: 118px; }
+  .add-social .btn:first-child {
+    float: left; }
+  .add-social .btn:last-child {
+    float: right; }
 
 /*# sourceMappingURL=style.css.map */
