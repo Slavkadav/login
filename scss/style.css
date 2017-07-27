@@ -6,99 +6,96 @@
 body {
   width: 2100px;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  flex-wrap: wrap; }
+  flex-flow: row nowrap;
+  align-items: flex-start; }
   body > * {
-    border: 1px solid red;
     margin-top: 50px;
     margin-left: 40px; }
 
 .login-stage {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
-  width: 360px;
+  padding: 50px;
+  width: 22.5rem;
+  color: white;
+  letter-spacing: .03em;
   background-color: #233056;
   border-radius: 2px;
-  padding: 50px;
-  color: white;
-  letter-spacing: .03em; }
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24), 0 2px 4px 0 rgba(0, 0, 0, 0.12); }
   .login-stage h2 {
-    font-size: 24px;
-    line-height: 1.5em;
-    font-weight: 600;
-    margin: 0 0 24px; }
+    margin: 0 0 1.5rem;
+    font: 600 1.5rem/1.5em "Open Sans", sans-serif; }
   .login-stage .btn-block {
-    margin-bottom: 24px; }
+    margin-bottom: 1.5rem; }
     .login-stage .btn-block .btn {
       width: 100%; }
   .login-stage .captcha-block {
+    margin-bottom: 1.5rem;
     width: 100%;
     transform: scale(0.8515);
-    transform-origin: 0 0;
-    margin-bottom: 24px; }
+    transform-origin: 0 0; }
   .login-stage .link-list {
     text-align: center; }
   .login-stage .form-group {
-    margin-bottom: 24px; }
+    margin-bottom: 1.5rem; }
     .login-stage .form-group label {
+      margin-bottom: 8px;
       font-size: 14px;
-      font-weight: 600;
-      margin-bottom: 8px; }
+      font-weight: 600; }
   .login-stage .link-block {
     margin-bottom: 18px;
     letter-spacing: .015em; }
     .login-stage .link-block:last-child {
       margin-bottom: 0; }
-  .login-stage .social-btn {
-    letter-spacing: .01em;
-    border-radius: 2px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 40px;
-    width: 260px;
-    margin-bottom: 12px;
-    color: #fffffe;
-    font-weight: 600;
-    font-size: 14px; }
-    .login-stage .social-btn.vk {
-      background-color: #4c6c91; }
-    .login-stage .social-btn.fb {
-      background-color: #3a599a; }
-    .login-stage .social-btn.tw {
-      background-color: #55acee; }
-    .login-stage .social-btn.google {
-      background-color: #fff;
-      color: rgba(0, 0, 0, 0.54); }
-    .login-stage .social-btn.bnet {
-      background-color: #153d5f; }
-    .login-stage .social-btn:last-child {
-      margin-bottom: 24px; }
-    .login-stage .social-btn img {
-      margin: 8px 17px 8px 8px; }
   .login-stage .social-block {
-    margin-bottom: 25px; }
+    margin-bottom: 1.5rem; }
+    .login-stage .social-block .social-btn {
+      margin-bottom: 12px;
+      height: 40px;
+      width: 16.25rem;
+      display: flex;
+      flex-direction: row;
+      color: #fffffe;
+      font-weight: 600;
+      font-size: 14px;
+      align-items: center;
+      letter-spacing: .01em;
+      border-radius: 2px; }
+      .login-stage .social-block .social-btn.vk {
+        background-color: #4c6c91; }
+      .login-stage .social-block .social-btn.fb {
+        background-color: #3a599a; }
+      .login-stage .social-block .social-btn.tw {
+        background-color: #55acee; }
+      .login-stage .social-block .social-btn.google {
+        background-color: #fff;
+        color: rgba(0, 0, 0, 0.54); }
+      .login-stage .social-block .social-btn.bnet {
+        background-color: #153d5f; }
+      .login-stage .social-block .social-btn img {
+        margin: 8px 17px 8px 8px; }
   .login-stage.mail-confirm p, .login-stage.mail-confirm .link-block {
-    margin-bottom: 24px; }
-  .login-stage.login-social {
+    margin-bottom: 1.5rem; }
+  .login-stage.sign-in-social {
     padding-bottom: 29px; }
-    .login-stage.login-social .gglogo {
-      margin: 0 auto 41px 57px;
+    .login-stage.sign-in-social .gglogo {
+      margin: 0 auto 2.5625rem 3.56253rem;
       width: 147px; }
-  .login-stage.sign-in {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column; }
-    .login-stage.sign-in .checkbox {
-      margin-bottom: 24px; }
-  .login-stage.registration {
-    margin-top: 50px; }
+  .login-stage.sign-in .checkbox {
+    margin-bottom: 1.5rem; }
+  .login-stage.registration .form-group label:hover .tip {
+    display: block;
+    width: 300px;
+    white-space: normal;
+    left: 39%;
+    top: -50px;
+    font-weight: normal; }
   .login-stage.add-social .btn-block {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between; }
   .login-stage.add-social .btn {
     width: 118px; }
+  .login-stage.add-social .system-message {
+    margin-bottom: 1.5em; }
   .login-stage.mail-confirm h2, .login-stage.add-social h2 {
     margin-bottom: 12px; }
   .login-stage.mail-confirm .btn-block, .login-stage.add-social .btn-block {

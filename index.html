@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://goodgame.ru/css/compiled/style-new.css">
 </head>
 <body>
-<div class="login-stage login-social">
+<div class="login-stage sign-in-social">
     <img src="img/logo-gg.svg" alt="" class="gglogo">
     <div class="social-block">
         <div class="social-btn vk"><img src="img/vk-24-px.svg" alt="">
@@ -64,22 +64,19 @@
     <h2>Регистрация</h2>
     <div class="form-group"><label for="reg-email">Email</label><input type="email" name="email" id="reg-email">
     </div>
-    <div class="form-group"><label for="reg-pass">Логин*</label><input type="text" name="login" id="reg-pass">
+    <div class="form-group"><label for="reg-pass">Логин*<span class="tip">После завершения регистрации логин сменить нельзя</span></label>
+
+        <input type="text" name="login" id="reg-pass">
     </div>
     <div class="form-group"><label for="reg-login">Пароль</label><input type="password" name="password"
                                                                         id="reg-login"></div>
     <div class="captcha-block">
-        <div id="captcha-place">
-            <div style="width: 304px; height: 78px;">
-                <div>
-                    <iframe src="https://www.google.com/recaptcha/api2/anchor?k=6LenFQETAAAAAO1WCIo7HQhzxbzmzt-oBHV-FPcO&amp;co=aHR0cDovL2xvY2FsaG9zdDozMjIw&amp;hl=ru&amp;v=r20170717162708&amp;theme=dark&amp;size=normal&amp;cb=d3td7p42bjg7"
-                            title="виджет reCAPTCHA" width="304" height="78" frameborder="0" scrolling="no"
-                            sandbox="allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation"></iframe>
-                </div>
-                <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"
-                          style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea>
-            </div>
-        </div>
+        <iframe src="https://www.google.com/recaptcha/api2/anchor?k=6LenFQETAAAAAO1WCIo7HQhzxbzmzt-oBHV-FPcO&amp;co=aHR0cDovL2xvY2FsaG9zdDozMjIw&amp;hl=ru&amp;v=r20170717162708&amp;theme=dark&amp;size=normal&amp;cb=d3td7p42bjg7"
+                title="виджет reCAPTCHA" width="304" height="78" frameborder="0" scrolling="no"
+                sandbox="allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation"></iframe>
+
+        <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"
+                  style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea>
     </div>
     <div class="btn-block">
         <input class="btn btn-blue" type="submit" value="Зарегистрироваться">

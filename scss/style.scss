@@ -11,53 +11,48 @@ $semi: #4f5977;
 body {
   width: 2100px;
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
   align-items: flex-start;
-  flex-wrap: wrap;
+
   & > * {
-    border: 1px solid red;
     margin-top: 50px;
     margin-left: 40px;
   }
 }
 
 .login-stage {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
-  width: 360px;
-  background-color: $mainColor;
-  border-radius: 2px;
   padding: 50px;
+  width: 22.5rem;
   color: rgb(255, 255, 255);
   letter-spacing: .03em;
-
+  background-color: $mainColor;
+  border-radius: 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
   h2 {
-    font-size: 24px;
-    line-height: 1.5em;
-    font-weight: 600;
-    margin: 0 0 24px;
+    margin: 0 0 1.5rem;
+    font: 600 1.5rem/1.5em "Open Sans", sans-serif;
   }
-
   .btn-block {
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
     .btn {
       width: 100%;
     }
   }
   .captcha-block {
+    margin-bottom: 1.5rem;
     width: 100%;
     transform: scale(0.8515);
     transform-origin: 0 0;
-    margin-bottom: 24px;
   }
   .link-list {
     text-align: center;
   }
   .form-group {
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
     label {
+      margin-bottom: 8px;
       font-size: 14px;
       font-weight: 600;
-      margin-bottom: 8px;
     }
   }
   .link-block {
@@ -67,67 +62,72 @@ body {
       margin-bottom: 0;
     }
   }
-  .social-btn {
-    letter-spacing: .01em;
-    border-radius: 2px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 40px;
-    width: 260px;
-    margin-bottom: 12px;
-    color: #fffffe;
-    font-weight: 600;
-    font-size: 14px;
-    &.vk {
-      background-color: #4c6c91;
-    }
-    &.fb {
-      background-color: #3a599a;
-    }
-    &.tw {
-      background-color: #55acee;
-    }
-    &.google {
-      background-color: #fff;
-      color: rgba(0, 0, 0, 0.54);
-    }
-    &.bnet {
-      background-color: #153d5f;
-    }
-    &:last-child {
-      margin-bottom: 24px;
-    }
-    img {
-      margin: 8px 17px 8px 8px;
-    }
-  }
   .social-block {
-    margin-bottom: 25px;
+    margin-bottom: 1.5rem;
+    .social-btn {
+      margin-bottom: 12px;
+      height: 40px;
+      width: 16.25rem;
+      display: flex;
+      flex-direction: row;
+      color: #fffffe;
+      font-weight: 600;
+      font-size: 14px;
+      align-items: center;
+      letter-spacing: .01em;
+      border-radius: 2px;
+      &.vk {
+        background-color: #4c6c91;
+      }
+      &.fb {
+        background-color: #3a599a;
+      }
+      &.tw {
+        background-color: #55acee;
+      }
+      &.google {
+        background-color: #fff;
+        color: rgba(0, 0, 0, 0.54);
+      }
+      &.bnet {
+        background-color: #153d5f;
+      }
+      img {
+        margin: 8px 17px 8px 8px;
+      }
+    }
   }
 
   &.mail-confirm {
     p, .link-block {
-      margin-bottom: 24px;
+      margin-bottom: 1.5rem;
     }
   }
-  &.login-social {
+  &.sign-in-social {
     padding-bottom: 29px;
     .gglogo {
-      margin: 0 auto 41px 57px;
+      margin: 0 auto 2.5625rem 3.56253rem;
       width: 147px;
     }
   }
   &.sign-in {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
     .checkbox {
-      margin-bottom: 24px;
+      margin-bottom: 1.5rem;
     }
   }
   &.registration {
-    margin-top: 50px;
+    .form-group {
+      label:hover {
+        .tip {
+          display: block;
+          width: 300px;
+          white-space: normal;
+          left: 39%;
+          top: -50px;
+          font-weight: normal;
+        }
+      }
+    }
   }
   &.add-social {
     .btn-block {
@@ -138,8 +138,10 @@ body {
     .btn {
       width: 118px;
     }
+    .system-message {
+      margin-bottom: 1.5em;
+    }
   }
-
   &.mail-confirm, &.add-social {
     h2 {
       margin-bottom: 12px;
