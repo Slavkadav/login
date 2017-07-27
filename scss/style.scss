@@ -5,52 +5,7 @@ $semi: #4f5977;
 * {
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
-}
-
-.btn {
-  margin-bottom: 24px;
-  width: 100%;
-}
-
-.link-list {
-  text-align: center;
-}
-
-.link-block {
-  margin-bottom: 18px;
-  letter-spacing: .015em;
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
-//
-//input {
-//  height: 35px;
-//  width: 260px;
-//  border-radius: 2px;
-//  background-color: $dark-two;
-//  border: 0;
-//  color: white;
-//  padding-left: 16px;
-//  font-size: 14px;
-//}
-//
-
-.captcha-block{
-  width: 100%;
-  transform: scale(0.8515);
-  transform-origin: 0 0;
-  margin-bottom: 24px;
-}
-
-.form-group {
-  margin-bottom: 24px !important;
-  label {
-    font-size: 14px;
-    font-weight: 600;
-    margin-bottom: 8px !important;
-  }
+  margin: 0;
 }
 
 body {
@@ -74,11 +29,87 @@ body {
   padding: 50px;
   color: rgb(255, 255, 255);
   letter-spacing: .03em;
+
   h2 {
     font-size: 24px;
     line-height: 1.5em;
     font-weight: 600;
     margin: 0 0 24px;
+  }
+
+  .btn-block {
+    margin-bottom: 24px;
+    .btn {
+      width: 100%;
+    }
+  }
+  .captcha-block {
+    width: 100%;
+    transform: scale(0.8515);
+    transform-origin: 0 0;
+    margin-bottom: 24px;
+  }
+  .link-list {
+    text-align: center;
+  }
+  .form-group {
+    margin-bottom: 24px;
+    label {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+  }
+  .link-block {
+    margin-bottom: 18px;
+    letter-spacing: .015em;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .social-btn {
+    letter-spacing: .01em;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    width: 260px;
+    margin-bottom: 12px;
+    color: #fffffe;
+    font-weight: 600;
+    font-size: 14px;
+    &.vk {
+      background-color: #4c6c91;
+    }
+    &.fb {
+      background-color: #3a599a;
+    }
+    &.tw {
+      background-color: #55acee;
+    }
+    &.google {
+      background-color: #fff;
+      color: rgba(0, 0, 0, 0.54);
+    }
+    &.bnet {
+      background-color: #153d5f;
+    }
+    &:last-child {
+      margin-bottom: 24px;
+    }
+    img {
+      margin: 8px 17px 8px 8px;
+    }
+  }
+  .social-block {
+    margin-bottom: 25px;
+  }
+
+  &.mail-confirm {
+    p, .link-block {
+      margin-bottom: 24px;
+    }
   }
   &.login-social {
     padding-bottom: 29px;
@@ -87,82 +118,35 @@ body {
       width: 147px;
     }
   }
-
-}
-
-.login-social {
-  .social-block {
-    margin-bottom: 25px;
-    .enter {
-      letter-spacing: .01em;
-      border-radius: 2px;
+  &.sign-in {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    .checkbox {
+      margin-bottom: 24px;
+    }
+  }
+  &.registration {
+    margin-top: 50px;
+  }
+  &.add-social {
+    .btn-block {
       display: flex;
-      flex-direction: row;
-      align-items: center;
-      height: 40px;
-      width: 260px;
-      margin-bottom: 12px;
-      color: #fffffe;
-      font-weight: 600;
-      font-size: 14px;
-      &.vk {
-        background-color: #4c6c91;
-      }
-      &.fb {
-        background-color: #3a599a;
-      }
-      &.tw {
-        background-color: #55acee;
-      }
-      &.google {
-        background-color: #fff;
-        color: rgba(0, 0, 0, 0.54);
-      }
-      &.bnet {
-        background-color: #153d5f;
-      }
-      &:last-child {
-        margin-bottom: 24px;
-      }
-      img {
-        margin: 8px 17px 8px 8px;
-      }
+      flex-flow: row nowrap;
+      justify-content: space-between;
+    }
+    .btn {
+      width: 118px;
     }
   }
 
-}
-
-.entrance {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  .checkbox {
-    margin-bottom: 24px;
-  }
-}
-
-.registration {
-  margin-top: 50px;
-}
-
-.add-social {
-  h2{
-    margin-bottom: 12px;
-  }
-  .hint {
-    background-color: $semi;
-    padding: 7px;
-    border-left: 4px solid #7e8fc2;
-    margin-bottom: 24px;
-  }
-  .btn {
-    width: 118px;
-  }
-  .btn:first-child {
-    float: left;
-  }
-  .btn:last-child {
-    float: right;
+  &.mail-confirm, &.add-social {
+    h2 {
+      margin-bottom: 12px;
+    }
+    .btn-block {
+      margin-bottom: 0;
+    }
   }
 }
 
