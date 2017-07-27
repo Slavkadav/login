@@ -29,27 +29,34 @@ input {
   font-size: 14px;
 }
 
-label {
+.form-group label {
   font-size: 14px;
   font-weight: 600;
   padding-top: 24px;
 }
 
 body {
+  width: 2100px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  flex-wrap: wrap;
   & > * {
     margin-top: 50px;
     margin-left: 10px;
   }
 }
 
-.login {
+
+.stage{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
   width: 360px;
   background-color: $mainColor;
   border-radius: 2px;
+}
+
+
+.login {
   .gglogo {
     margin-left: 107px;
     margin-top: 50px;
@@ -89,7 +96,7 @@ body {
 
 .content-wrap {
   color: white;
-  padding: 50px;
+  padding: 50px 50px 0 50px;
 }
 
 h2 {
@@ -98,27 +105,16 @@ h2 {
 }
 
 .entrance {
-  border-radius: 2px;
-  width: 360px;
-  background-color: $mainColor;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
 }
 
 .registration {
-  background-color: $mainColor;
-  width: 360px;
-  min-height: 100px;
   margin-top: 50px;
 }
 
 .add-social {
-
-  width: 360px;
-  background-color: $mainColor;
-  border-radius: 2px;
-  height: auto;
   .hint {
     background-color: $semi;
     padding:7px;

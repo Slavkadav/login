@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://goodgame.ru/css/compiled/style-new.css">
 </head>
 <body>
-<div class="login">
+<div class="login stage">
     <img src="img/logo-gg.svg" alt="" class="gglogo">
     <div class="enter vk"><img src="img/vk-24-px.svg" alt="">
         Вход через VK
@@ -32,7 +32,7 @@
 </div>
 
 
-<div class="entrance">
+<div class="entrance stage">
     <div class="content-wrap">
         <h2>Вход</h2>
         <div class="form-group"><label for="login-log">Логин</label><input type="text" name="login" id="login-log">
@@ -40,7 +40,7 @@
         <div class="form-group"><label for="login-pass">Пароль</label><input type="password" name="password"
                                                                              id="login-pass"></div>
         <div class="checkbox">
-            <input type="checkbox" id="checkbox-remember">
+            <input type="checkbox" id="checkbox-remember" class="ng-pristine">
             <label for="checkbox-remember">
                 Оставаться авторизованным
             </label>
@@ -59,7 +59,7 @@
 </div>
 
 
-<div class="registration">
+<div class="registration stage">
     <div class="content-wrap">
         <h2>Регистрация</h2>
         <div class="form-group"><label for="reg-email">Email</label><input type="email" name="email" id="reg-email">
@@ -94,7 +94,7 @@
 </div>
 
 
-<div class="add-social">
+<div class="add-social stage">
     <div class="content-wrap">
         <h2>Привязать соцсеть</h2>
         <div class="hint">Войдите на сайт с логином и паролем, чтобы привязать соцсеть к вашему профилю на GoodGame.
@@ -111,6 +111,21 @@
         </div>
     </div>
 
+</div>
+
+<div class="last-step stage">
+    <div class="content-wrap">
+        <h2>Последний шаг</h2>
+        <p>Для завершения регистрации перейдите по ссылке в письме, которое мы вам отправили.</p>
+        <div class="link-block">
+            Письмо не пришло?<br>
+        <a>Отправить повторно</a>
+        </div>
+
+        <div class="form-group">
+            <input type="button" class="btn btn-blue" value="Хорошо">
+        </div>
+    </div>
 </div>
 
 </body>
